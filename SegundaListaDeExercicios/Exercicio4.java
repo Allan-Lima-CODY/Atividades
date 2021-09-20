@@ -14,13 +14,13 @@ public class Exercicio4 {
         h = Double.parseDouble(JOptionPane.showInputDialog("Digite a altura do indivíduo: "));
         sexo = JOptionPane.showInputDialog("Digite o sexo do indivíduo. (M para Masculino e F para Feminino): ");
 
-        if (sexo == "M")
+        if ((sexo.equals("M") || sexo.equals("m")))
         {
             Double pesoIdeal = (72.7 * h) - 58;
             JOptionPane.showMessageDialog(null, "O peso ideal para essa pessoa é: " + pesoIdeal);
         }
         
-        else if (sexo == "F")
+        else if ((sexo.equals("F") || sexo.equals("f")))
         {
             Double pesoIdeal = (62.1 * h) - 44.7;
             JOptionPane.showMessageDialog(null, "O peso ideal para essa pessoa é: " + pesoIdeal);
